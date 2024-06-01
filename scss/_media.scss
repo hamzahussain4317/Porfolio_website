@@ -1,0 +1,140 @@
+@media(max-width:800px) {
+    #header-home {
+        height: 30rem;
+
+        #header-content {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    #header-inner {
+        height: 6rem;
+    }
+
+    #work {
+        &-a {
+            padding: 5rem 0;
+        }
+    }
+
+}
+
+@media(max-width:600px) {
+    #header-home {
+        height: 10rem;
+        border-bottom: 2px solid $main-color;
+
+        #main-nav {
+            flex-direction: column;
+            align-items: center;
+
+            ul {
+                li {
+                    padding: 1rem;
+                }
+            }
+        }
+
+        #header-content {
+            display: none;
+        }
+    }
+
+    #header-inner {
+        height: 10rem;
+        border-bottom: 2px solid $main-color;
+
+        #main-nav {
+            flex-direction: column;
+            align-items: center;
+
+            ul {
+                li {
+                    padding: 1rem;
+                }
+            }
+        }
+
+        #header-content {
+            display: none;
+        }
+    }
+
+    #home-a .speciality,
+    #home-b .achievements,
+    #home-c .process,
+    #work-a .items,
+    #contact-b .work-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #main-footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-a .about-a-container {
+        grid-template-areas:
+            'bioimage '
+            'bio'
+            'aw1'
+            'aw2'
+            'aw3'
+        ;
+    }
+
+    #about-c {
+        display: none;
+    }
+
+    #about-d .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+
+        .flex-container {
+            p {
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    #contact-a .form-inputs {
+        grid-template-areas:
+            'name'
+            'email'
+            'subject'
+            'phone'
+            'message';
+        margin-bottom: 2rem;
+    }
+
+    #contact-a .btn-1 {
+        width: 70%;
+    }
+
+    #contact-b .work-container div {
+        line-height: 2rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px dotted #555;
+        padding-bottom: 2rem;
+    }
+
+    #contact-c h1 {
+        font-size: 2rem;
+        padding: 4rem 0;
+    }
+}
+
+@media(max-width:320px) {
+
+    #main-footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+
+        .footer-icons {
+            padding: 0.5rem 0.5rem;
+        }
+    }
+
+}
